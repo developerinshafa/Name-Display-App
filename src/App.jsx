@@ -16,7 +16,7 @@ function App() {
     <>
      <Header user={userName} setUserName={setUserName} />
      
-     <div className='p-8 bg-blue-950 text-white ml-100 mr-100 mt-20 rounded-xl'>
+     <div className='p-8 flex items-center justify-center mt-10 rounded'>
       <div className='text-center'>
         <h1 className='flex text-center justify-center text-3xl font-bold p-2 mt-3 mb-4' 
         onClick={() => setMessage(`Welcome ${userName}! Have a great day 😊`)}>
@@ -47,7 +47,7 @@ function App() {
      {/* build a card with items*/}
      <section className='mt-5 mb-10 '>
       <h1 className='text-3xl font-bold mb-4 text-center text-blue-900 '>Dinner Time</h1>
-      <div className='p-4 rounded w-full px-20'>
+      <div className='p-4 rounded w-full px-10'>
         <ul className='space-x-4 flex'>
           <CartItem item = {{image: 'https://static.toiimg.com/thumb/53096628.cms?imgsize=104874&width=800&height=800',
              name: "Chicken Briyani", 
