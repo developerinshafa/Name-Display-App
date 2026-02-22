@@ -2,8 +2,9 @@ import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
-import Header from './components/Header'
+import Header from './components/header/Header'
 import CartItem from './components/cart/CartItem';
+import Footer from './components/Footer'
 
 function App() {
   const [userName, setUserName] = useState("Fathima Inshafa");
@@ -18,11 +19,11 @@ function App() {
      
      <div className='p-8 flex items-center justify-center mt-10 rounded'>
       <div className='text-center'>
-        <h1 className='flex text-center justify-center text-3xl font-bold p-2 mt-3 mb-4' 
+        <h1 className='flex text-center justify-center text-3xl text-blue-950 font-bold p-2 mt-3 mb-4' 
         onClick={() => setMessage(`Welcome ${userName}! Have a great day 😊`)}>
           💐 Hello {userName}!</h1>
           {message && (
-          <p className="mt-4 p-4 text-2xl text-white font-semibold">
+          <p className="mt-4 p-4 text-3xl text-orange-700 font-bold">
             {message}
           </p>
           )}
@@ -67,6 +68,8 @@ function App() {
         </ul>
       </div>
      </section>
+     <Footer />
+     
     </>
   )
 }

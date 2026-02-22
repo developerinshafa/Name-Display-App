@@ -1,3 +1,5 @@
+import NameList from './NameList';
+
 const Header = ({user, setUserName }) => {
     return [
     <header className='bg-blue-950 text-white font-semibold text-2xl p-2'>
@@ -24,11 +26,12 @@ const Header = ({user, setUserName }) => {
                 // console.log(e.target.value)
                 setUserName(event.target.value)}
           >
-            <option value="Fathima Inshafa">Fathima Inshafa</option>
-            <option value="Ajith">Ajith</option>
+            <NameList />
+            <option value="Suriya"> Suriya</option>
+            {/* <option value="Ajith">Ajith</option>
             <option value="Anbu">Anbu</option>
             <option value="Nayanthara">Nayanthara</option>
-            <option value="Jothika">Jothika</option>
+            <option value="Jothika">Jothika</option> */}
           </select>
     </ul>
     </div>
