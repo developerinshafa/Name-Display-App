@@ -21,7 +21,7 @@ const Header = ({user, setUserName }) => {
                 <a href="#" className="hover:text-orange-400 p-2">Place</a>
             </li>
             <li> 
-                <a href="#" className="hover:text-orange-400 p-2">Contect</a> 
+                <a href="#" className="hover:text-orange-400 p-2">Contact</a> 
             </li>
             
             <select 
@@ -40,11 +40,11 @@ const Header = ({user, setUserName }) => {
             <NameList person = {{value:"Nayanthara", name:"Nayanthara"}}/>
             <NameList person = {{value:"Trisha", name:"Trisha"}}/>
 
-            {/* <option value="Suriya"> Suriya</option> */}
-            {/* <option value="Ajith">Ajith</option>
+             {/* <option value="Suriya"> Suriya</option>
+             <option value="Ajith">Ajith</option>
             <option value="Anbu">Anbu</option>
             <option value="Nayanthara">Nayanthara</option>
-            <option value="Jothika">Jothika</option> */}
+            <option value="Jothika">Jothika</option>  */}
           </select>
     </ul>
     </div>

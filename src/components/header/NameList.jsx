@@ -8,7 +8,6 @@ const NameList = ({person}) => {
         <option value="Jothika">Jothika</option> */}
         </>
     );
-
 };
 
 export default NameList;

@@ -9,7 +9,6 @@ import Footer from './components/Footer'
 function App() {
   const [userName, setUserName] = useState("Fathima Inshafa");
   const [message, setMessage] = useState("");
- 
 
   // console.log(userName);
 
