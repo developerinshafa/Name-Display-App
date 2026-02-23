@@ -1,11 +1,11 @@
-const NameList = () => {
+const NameList = ({person}) => {
     return(
         <>
-        <option value="Fathima Inshafa">Fathima Inshafa</option>
-        <option value="Ajith">Ajith</option>
+        <option value={person.value} > name={person.name}</option>
+        {/* <option value="Ajith">Ajith</option>
         <option value="Anbu">Anbu</option>
         <option value="Nayanthara">Nayanthara</option>
-        <option value="Jothika">Jothika</option>
+        <option value="Jothika">Jothika</option> */}
         </>
     );
 

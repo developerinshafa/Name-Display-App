@@ -9,7 +9,7 @@ import Footer from './components/Footer'
 function App() {
   const [userName, setUserName] = useState("Fathima Inshafa");
   const [message, setMessage] = useState("");
-
+ 
 
   // console.log(userName);
 
@@ -38,7 +38,7 @@ function App() {
             setMessage(`Welcome ${value}! Have a great day 😊`);
             } 
             else {
-            setMessage(""); // clear message if name is too short
+            setMessage(""); //clr message if name is too short
             }
           }}
         />
@@ -46,7 +46,7 @@ function App() {
      </div>
 
      {/* build a card with items*/}
-     <section className='mt-5 mb-10 '>
+     <section className='mt-5 mb-10 max-sm'>
       <h1 className='text-3xl font-bold mb-4 text-center text-blue-900 '>Dinner Time</h1>
       <div className='p-4 rounded w-full px-10'>
         <ul className='space-x-4 flex'>
