@@ -16,7 +16,7 @@ function App() {
     <>
      <Header user={userName} setUserName={setUserName} />
      
-     <div className='p-8 flex items-center justify-center mt-10 rounded'>
+     <div className='p-8 flex items-center justify-center mt-10 rounded '>
       <div className='text-center'>
         <h1 className='flex text-center justify-center text-3xl text-blue-950 font-bold p-2 mt-3 mb-4' 
         onClick={() => setMessage(`Welcome ${userName}! Have a great day 😊`)}>

@@ -50,7 +50,6 @@ const Header = ({user, setUserName }) => {
     </div>
     </header>
 ]; 
-};
-
+}
 
 export default Header;
