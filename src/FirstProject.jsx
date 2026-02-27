@@ -1,4 +1,5 @@
 import { useState } from "react";
+import LoginForm from "./components/ui/LoginForm";
 import Billing from "./components/api/Billing";
 
 export default function FirstProject() {
@@ -34,11 +35,12 @@ export default function FirstProject() {
          )}
         </h1>
         <div className="flex space-x-2">
-            <input type="search" 
-         placeholder="Search Bill by....." 
-         className="border border-gray-300 rounded outline-none p-1 px-4 w-full"
-         value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
+            <input 
+            type="search" 
+            placeholder="Search Bill by....." 
+            className="border border-gray-300 rounded outline-none p-1 px-4 w-full"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
         />
         <select 
         value={limit}
@@ -55,6 +57,10 @@ export default function FirstProject() {
             <option value="All">All</option>
         </select>
         </div>
+
+        <section className="max-w-xl mx-auto my-10"> 
+            <LoginForm />
+        </section>
         
         <div>
             <Billing searchTerm={searchTerm} limit={limit}/> 
@@ -66,3 +72,6 @@ export default function FirstProject() {
     </>
   );
 }
+
+
+
